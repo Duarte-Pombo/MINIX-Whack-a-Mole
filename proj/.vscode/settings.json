@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "cursor.h": "c",
+        "video_gr.h": "c",
+        "keyboard.h": "c"
+    }
+}

@@ -1,0 +1,65 @@
+├── src
+│   ├── gameLogic		# manage actions according to current game state
+│   │   ├── game.c
+│   │   └── game.h
+│   ├── labDrivers		# direct implementation from the lab class drivers
+│   │   ├── keyboard
+│   │   │   ├── i8042.h
+│   │   │   ├── kbc.c
+│   │   │   ├── kbc.h
+│   │   │   ├── keyboard.c
+│   │   │   ├── keyboard.h
+│   │   │   └── lab3.c
+│   │   ├── mouse
+│   │   │   ├── lab4.c
+│   │   │   ├── mouse.c
+│   │   │   └── mouse.h
+│   │   ├── timer
+│   │   │   ├── i8254.h
+│   │   │   ├── lab2.c
+│   │   │   ├── timer.c
+│   │   │   └── timer.h
+│   │   └── video
+│   │       ├── lab5.c
+│   │       ├── video_gr.c
+│   │       └── video_gr.h
+│   ├── lib
+│   ├── Makefile
+│   ├── proj
+│   ├── proj.c			# "core of the project" containing the game loop and the logic to switch game states
+│   ├── projDrivers		# drivers from lab classes that needed small changes to fit the project requirements
+│   │   ├── keyboard
+│   │   ├── mouse
+│   │   ├── timer
+│   │   │   ├── i8254.h
+│   │   │   ├── timer.c
+│   │   │   └── timer.h
+│   │   └── video
+│   │       ├── video.c
+│   │       └── video.h
+│   ├── proj.h
+│   ├── settings.c 		# logic to change drivers and UiElements output (game difficulty or mouse sensitivity)
+│   ├── settings.h
+│   ├── sprites			# archive of all XPM used for the project
+│   │   ├── cursor.xpm
+│   │   ├── hammerCursorClick.xpm
+│   │   ├── hammerCursor.xpm
+│   │   ├── moleDown.xpm
+│   │   ├── moleUp.xpm
+│   │   ├── quit_button.xpm
+│   │   ├── settings.xpm
+│   │   ├── start.xpm
+│   │   ├── trace.txt
+│   │   ├── whackMenu.xpm
+│   │   └── whack.xpm
+│   ├── uiElements		# logic for the two main components of the game (cursor and moles)
+│   │   ├── cursor.c
+│   │   ├── cursor.h
+│   │   ├── mole.c
+│   │   └── mole.h
+│   ├── utils			# drivers utilities
+│   │   ├── utils.c
+│   │   └── utils.h
+└── trace.txt
+
+
